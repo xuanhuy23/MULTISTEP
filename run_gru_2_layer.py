@@ -338,7 +338,7 @@ plt.show()
 
 # 10b. So sánh dự báo (vẽ n_points_to_plot điểm đầu)
 n_points_to_plot = 200
-plt.figure(figsize=(10, 5))
+plt.figure(figsize=(8, 4))
 plt.plot(y_test_unscaled.reshape(-1)[:n_points_to_plot], color='blue', linewidth=2, label='Mực nước Thực tế')
 plt.plot(y_pred_for_eval.reshape(-1)[:n_points_to_plot], color='red', linestyle='--', linewidth=2, label=f'Dự báo ({MODEL_NAME})')
 plt.title(f'So sánh dự báo Multi-Step ({N_OUT} giờ) trên {n_points_to_plot} điểm đầu của tập Test')
